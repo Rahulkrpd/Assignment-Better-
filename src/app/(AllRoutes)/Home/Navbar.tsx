@@ -23,15 +23,15 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
                         <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none ' onClick={() => router.push("/About")}>About Us </Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
-                        The React Framework – created and maintained by @vercel.
+                        About Better.com
                     </HoverCardContent>
                 </HoverCard>
                 <HoverCard>
                     <HoverCardTrigger>
-                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none ' onClick={()=>router.push("/mortgage-calculator")}>Mortgage Calculator</Button>
+                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none ' onClick={() => router.push("/mortgage-calculator")}>Mortgage Calculator</Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
-                        The React Framework – created and maintained by @vercel.
+                        Calculate your monthly mortgage payment
                     </HoverCardContent>
                 </HoverCard>
                 <HoverCard>
@@ -39,7 +39,7 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
                         <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none '>HELOC</Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
-                        The React Framework – created and maintained by @vercel.
+                        Home Equity Line of Credit
                     </HoverCardContent>
                 </HoverCard>
                 <HoverCard>
@@ -47,7 +47,7 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
                         <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none '>Rate</Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
-                        The React Framework – created and maintained by @vercel.
+                        Today’s mortgage rates
                     </HoverCardContent>
                 </HoverCard>
                 <HoverCard>
@@ -55,7 +55,7 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
                         <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none '>Better+</Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
-                        The React Framework – created and maintained by @vercel.
+                        Homeowners insurance
                     </HoverCardContent>
                 </HoverCard>
             </div>
