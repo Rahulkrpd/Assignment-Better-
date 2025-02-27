@@ -97,7 +97,7 @@ const MortgageSection1 = () => {
                     onMouseMove={(e) => e.buttons === 1 && handleDrag(e)} // Enables dragging
                 >
                     <div
-                        className="absolute top-0 h-full bg-blue-500 rounded-full"
+                        className="absolute top-0 h-full bg-black rounded-full"
                         style={{ width: `${progressValue}%` }}
                     />
                 </div>
