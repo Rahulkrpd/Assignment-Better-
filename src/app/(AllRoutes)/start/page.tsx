@@ -6,12 +6,13 @@ import HomeTwoToneIcon from '@mui/icons-material/HomeTwoTone';
 import { useRouter } from "next/navigation";
 
 
-const page = () => {
+const Page = () => {
   const handleCall = () => {
     window.location.href = "tel:415523 8837";
   };
 
   const router = useRouter();
+
   return (
 
     <div className='min-h-screen bg-white  '>
@@ -20,8 +21,9 @@ const page = () => {
 
         <nav className='w-4/5  h-20 flex  justify-between p-2 lg:w-4/5   '>
           <div className=''>
-            <p className='text-[#1e5f4dfc] font-medium text-xl  font-[Roboto]' onClick={()=>{router.push("/Home")}} >Better<p className='text-gray-500'>Mortgage</p></p>
-
+            <div className='text-[#1e5f4dfc] font-medium text-xl font-[Roboto]' onClick={() => { router.push("/Home") }}>
+              <button>Better</button> <br /><button className='text-gray-500'>Mortgage</button>
+            </div>
           </div>
 
           <div className='flex justify-center items-center ' onClick={handleCall}>
@@ -118,4 +120,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
