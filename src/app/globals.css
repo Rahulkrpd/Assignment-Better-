@@ -1,21 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  font-family: __myFont_974306, sans-serif;
+  /* Ensure the font is properly defined */
+  font-weight: 400;
+  /* Apply to all elements */
+  font-size: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+  font-weight: 400;
+  /* Force all elements to inherit font-weight */
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+
+
+}
+
+
+.logo {
+  font-weight: 500;
+}
+
+
+
+
+/* 
+@layer base {}
+
+
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
+
+
+
+
+
+
+
+
+@layer base {}
+
+
+
+
+
+
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
