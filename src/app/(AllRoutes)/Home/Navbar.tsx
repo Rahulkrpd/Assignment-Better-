@@ -20,7 +20,7 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
                 <Button className='bg-inherit rounded-full  text-xl shadow-none font-medium' onClick={() => router.push("/")}>Better </Button>
                 <HoverCard>
                     <HoverCardTrigger>
-                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none ' onClick={() => router.push("/About")}>About Us </Button>
+                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none hidden lg:block ' onClick={() => router.push("/About")}>About Us </Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
                         About Better.com
@@ -28,7 +28,7 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
                 </HoverCard>
                 <HoverCard>
                     <HoverCardTrigger>
-                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none ' onClick={() => router.push("/mortgage-calculator")}>Mortgage Calculator</Button>
+                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none hidden lg:block ' onClick={() => router.push("/mortgage-calculator")}>Mortgage Calculator</Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
                         Calculate your monthly mortgage payment
@@ -36,7 +36,7 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
                 </HoverCard>
                 <HoverCard>
                     <HoverCardTrigger>
-                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none '>HELOC</Button>
+                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none hidden lg:block'>HELOC</Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
                         Home Equity Line of Credit
@@ -44,7 +44,7 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
                 </HoverCard>
                 <HoverCard>
                     <HoverCardTrigger>
-                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none '>Rate</Button>
+                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none hidden lg:block '>Rate</Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
                         Today’s mortgage rates
@@ -52,7 +52,7 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
                 </HoverCard>
                 <HoverCard>
                     <HoverCardTrigger>
-                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none '>Better+</Button>
+                        <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-sm shadow-none  lg:block hidden'>Better+</Button>
                     </HoverCardTrigger>
                     <HoverCardContent className='bg-white text-black rounded-lg border-none'>
                         Homeowners insurance
@@ -62,11 +62,11 @@ const Navbar = ({ background, color }: { background: string; color: string }) =>
 
 
             <div className='w-1/3 h-full  items-center   flex  justify-evenly'>
-                <div className="rounded-full cursor border-gray border-2 w-12 h-12 flex justify-center  hover:bg-gray-100 hover:text-black hover:border-none items-center">
-                    <PhoneIcon className='' />
+                <div className="rounded-full cursor border-gray-300 border-2  p-2 lg:w-12 lg:h-12 flex justify-center  hover:bg-gray-100 hover:text-black hover:border-none items-center">
+                    <PhoneIcon  />
                 </div>
 
-                <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-xl shadow-none '>Sign in </Button>
+                <Button className='bg-inherit rounded-full hover:bg-gray-100 hover:rounded-full hover:text-black text-xl shadow-none  hidden lg:block '>Sign in </Button>
                 <Button className=' bg-green-400 text-black   p-6 rounded-full  hover:rounded-full hover:text-white hover:bg-[#004733]  text-lg  shadow-none'  >Continue </Button>
 
             </div>
